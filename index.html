@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="overflow-x-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebGenie</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b92ac527cf.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body style="background-color: #F3FCF0">
+    <header class="pb-28 pt-5" style="color: #1F271B" id="backgroundHeader">
+      <web-particles
+        id="tsparticles"
+        options='{"fps_limit":60,"interactivity":{"detectsOn":"canvas","events":{"onClick":{"enable":false,"mode":"push"},"onHover":{"enable":true,"mode":"repulse"},"resize":true},"modes":{"push":{"particles_nb":4},"repulse":{"distance":200,"duration":0.4}}},"particles":{"color":{"value":"#ffffff"},"links":{"color":"#FFD23F","distance":150,"enable":true,"opacity":0.4,"width":1},"move":{"bounce":false,"direction":"none","enable":true,"outMode":"out","random":false,"speed":2,"straight":false},"number":{"density":{"enable":true,"area":800},"value":80},"opacity":{"value":0.5},"shape":{"type":"circle"},"size":{"random":true,"value":5}},"detectRetina":true}'
+      ></web-particles>
+      <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.28.0/dist/tsparticles.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2.5.0/custom-elements-es5-adapter.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2.5.0/webcomponents-loader.js"></script>
+      <script
+        type="module"
+        src="https://cdn.jsdelivr.net/npm/web-particles@1.1.0/dist/web-particles.min.js"
+      ></script>
+      <script
+        async=""
+        defer=""
+        src="https://buttons.github.io/buttons.js"
+      ></script>
+      <div class="container mx-auto my-12 select-none">
+        <h1 class="text-5xl font-bold">WebGenie</h1>
+        <p class="small py-2 ml-1">Desenvolvimento de websites e chatbots</p>
+      </div>
+      <div class="container mx-auto">
+        <div class="columns-2 gap-60 select-none">
+          <img
+            src="./img/computer.webp"
+            alt="Computer image."
+            style="transform: scale(1) rotate(15deg);"
+            class="my-20 select-none"
+          />
+          <div class="place-items-center pt-44">
+            <h2
+              class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl"
+            >
+              Tenha uma Landing Page profissional
+            </h2>
+            <p class="text-xl mt-5">
+              Transforme visitantes em clientes com uma landing page
+              profissional. Aumente suas chances de conversão e destaque-se da
+              concorrência. Crie agora a sua landing page com a ajuda da nossa
+              equipe especializada em design e marketing digital
+            </p>
+            <button
+              class="rounded-lg p-4 mt-14 font-semibold text-xl w-auto bg-yellow-400 hover:bg-purple-600 ease-in duration-150"
+              id="buttonOrcamento"
+            >
+              FAZER ORÇAMENTO
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 inline mb-1 ml-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="flex w-full">
+        <img src="Vectortriangulo.png" alt="" class="w-full relative" />
+      </div>
+      <div class="mx-auto pt-20 px-64 py-8 bg-white w-screen select-none">
+        <h2
+          class="text-5xl mb-16 text-center py-14 font-extrabold tracking-tight leading-none"
+        >
+          Alguns dos sites feitos...
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img
+              src="https://via.placeholder.com/640x360.png?text=Site+1"
+              alt="Site 1"
+              class="w-full"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">UnionDev</h3>
+              <p class="text-gray-700 text-base">Descrição do Site 1.</p>
+              <button
+                type="button"
+                class="mt-5 focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:focus:ring-yellow-900"
+                id="uniondevButton"
+              >
+                VER SITE
+              </button>
+              <script type="text/javascript">
+                document.getElementById("uniondevButton").onclick = function() {
+                  window.open("https://uniondev.com.br/", "_blank");
+                };
+              </script>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img
+              src="https://via.placeholder.com/640x360.png?text=Site+2"
+              alt="Site 2"
+              class="w-full"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Tmkt Londrina</h3>
+              <p class="text-gray-700 text-base">Descrição do Site 2.</p>
+              <button
+                type="button"
+                class="mt-5 focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:focus:ring-yellow-900"
+                id="TmktButton"
+              >
+                VER SITE
+              </button>
+              <script type="text/javascript">
+                document.getElementById("TmktButton").onclick = function() {
+                  window.open("https://tmktlondrina.com.br/", "_blank");
+                };
+              </script>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img
+              src="https://via.placeholder.com/640x360.png?text=Site+3"
+              alt="Site 3"
+              class="w-full"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-2">Site 3</h3>
+              <p class="text-gray-700 text-base">Descrição do Site 3.</p>
+              <button
+                type="button"
+                class="mt-5 focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:focus:ring-yellow-900"
+              >
+                VER SITE
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section style="background-color: #FFD23F;">
+        <div class="flex w-full select-none" style="background-color: #FFF;">
+          <img
+            src="VectortrianguloAmarelo.webp"
+            alt=""
+            class="w-full relative mt-36"
+            style="transform: scaleX(-1); "
+          />
+        </div>
+        <div class="container px-auto w-full">
+          <h2
+            class="text-5xl mt-28 mb-16 text-center py-14 font-extrabold tracking-tight leading-none select-none"
+          >
+            Veja quais são as vantagens de fazer seu WebSite com o WebGenie
+          </h2>
+          <div class="columns-1 gap-60 select-none">
+            <div
+              class="px-3 md:lg:xl:px-40 border-t border-b pt-20 bg-opacity-10 pb-36"
+              style="background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/dot-grid.png') ;"
+            >
+              <div
+                class="grid grid-cols-1 md:lg:xl:grid-cols-3 group bg-white shadow-xl shadow-neutral-100 border "
+              >
+                <div
+                  class="p-10 flex flex-col items-center text-center group md:lg:xl:border-r md:lg:xl:border-b hover:bg-slate-50"
+                >
+                  <span
+                    class="p-5 rounded-full bg-red-500 text-white shadow-lg shadow-red-200"
+                  >
+                    <i
+                      class="fa-solid fa-person-running fa-2xl hover:transform-none"
+                    ></i>
+                  </span>
+                  <p class="text-xl font-medium text-slate-700 mt-3">
+                    Site otimizado
+                  </p>
+                  <p class="mt-2 text-sm text-slate-500">
+                    Tenha um site otimizado para melhor experiência. Velocidade,
+                    navegação fácil, design atraente e compatibilidade móvel.
+                    Invista para se destacar e atrair sucesso.
+                  </p>
+                </div>
+                <div
+                  class="p-10 flex flex-col items-center text-center group md:lg:xl:border-r md:lg:xl:border-b hover:bg-slate-50"
+                >
+                  <span
+                    class="p-5 rounded-full bg-orange-500 text-white shadow-lg shadow-orange-200"
+                  >
+                    <i
+                      class="fa-solid fa-globe fa-2xl hover:transform-none"
+                    ></i>
+                  </span>
+                  <p class="text-xl font-medium text-slate-700 mt-3">
+                    Presença Online
+                  </p>
+                  <p class="mt-2 text-sm text-slate-500">
+                    Fortalecendo sua Presença Online para Alcançar um Público
+                    Mais Amplo e Conectar-se de Maneira Significativa com seus
+                    Clientes e Seguidores.
+                  </p>
+                </div>
+
+                <div
+                  class="p-10 flex flex-col items-center text-center group md:lg:xl:border-b hover:bg-slate-50 "
+                >
+                  <span
+                    class="p-5 rounded-full bg-yellow-500 text-white shadow-lg shadow-yellow-200"
+                  >
+                    <i
+                      class="fa-solid fa-compass-drafting fa-2xl hover:transform-none"
+                    ></i>
+                  </span>
+                  <p class="text-xl font-medium text-slate-700 mt-3">
+                    Design Moderno
+                  </p>
+                  <p class="mt-2 text-sm text-slate-500">
+                    Desenvolvimento de um Design Moderno e Atraente que Cativa a
+                    Atenção dos Usuários e Reflete a Inovação e Profissionalismo
+                    da sua Marca.
+                  </p>
+                </div>
+
+                <div
+                  class="p-10 flex flex-col items-center text-center group md:lg:xl:border-r hover:bg-slate-50 "
+                >
+                  <span
+                    class="p-5 rounded-full bg-lime-500 text-white shadow-lg shadow-lime-200"
+                  >
+                    <i class="fa-solid fa-pen fa-2xl hover:transform-none"></i>
+                  </span>
+                  <p class="text-xl font-medium text-slate-700 mt-3">
+                    Personalização e Flexibilidade
+                  </p>
+                  <p class="mt-2 text-sm text-slate-500">
+                    Criamos websites personalizados para atender às suas
+                    necessidades exclusivas. Trabalhamos em colaboração,
+                    entendendo suas especificações e preferências de design. Um
+                    site adaptado à sua marca, com experiência excepcional.
+                  </p>
+                </div>
+
+                <div
+                  class="p-10 flex flex-col items-center text-center group md:lg:xl:border-r hover:bg-slate-50 "
+                >
+                  <span
+                    class="p-5 rounded-full bg-teal-500 text-white shadow-lg shadow-teal-200"
+                  >
+                    <i
+                      class="fa-solid fa-handshake-angle fa-xl hover:transform-none"
+                    ></i>
+                  </span>
+                  <p class="text-xl font-medium text-slate-700 mt-3">
+                    Suporte Técnico Excepcional
+                  </p>
+                  <p class="mt-2 text-sm text-slate-500">
+                    Ao contratar nosso serviço de criação de websites,
+                    oferecemos suporte técnico completo. Estamos sempre
+                    disponíveis para ajudar, desde a concepção até a manutenção.
+                    Garantimos o sucesso do seu projeto com orientações
+                    personalizadas.
+                  </p>
+                </div>
+
+                <div
+                  class="p-10 flex flex-col items-center text-center group hover:bg-slate-50 "
+                >
+                  <span
+                    class="p-5 rounded-full bg-indigo-500 text-white shadow-lg shadow-indigo-200"
+                  >
+                    <i
+                      class="fa-solid fa-mobile-screen-button fa-2xl hover:transform-none"
+                    ></i>
+                  </span>
+                  <p class="text-xl font-medium text-slate-700 mt-3">
+                    Responsividade
+                  </p>
+                  <p class="mt-2 text-sm text-slate-500">
+                    Tenha um site otimizado para dispositivos móveis, atendendo
+                    às necessidades dos usuários e impulsionando o sucesso do
+                    seu negócio.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="w-full bg-gray-400 shadow-xl shadow-indigo-200 py-10 px-20 flex justify-between items-center"
+              >
+                <p class="text-white">
+                  <span class="text-4xl font-medium">Ainda em dúvida ?</span>
+                  <br />
+                  <span class="text-lg">
+                    Tire suas dúvidas comigo pelo WhatsApp !
+                  </span>
+                </p>
+                <button
+                  class="px-5 py-3 font-medium text-slate-700 shadow-xl hover:bg-white duration-150 bg-lime-400"
+                >
+                  TIRE SUAS DÚVIDAS
+                  <i
+                    class="fa-brands fa-whatsapp ml-3 fa-xl hover:transform-none"
+                  ></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="row dark-blue">
+        <div>
+          <svg
+            id=""
+            preserveAspectRatio="xMidYMax meet"
+            class="svg-separator sep3"
+            viewBox="0 0 1600 100"
+            style="display: block;"
+            data-height="100"
+          >
+            <path
+              class=""
+              style="opacity: 1;fill: #273a4c;"
+              d="M-40,71.627C20.307,71.627,20.058,32,80,32s60.003,40,120,40s59.948-40,120-40s60.313,40,120,40s60.258-40,120-40s60.202,40,120,40s60.147-40,120-40s60.513,40,120,40s60.036-40,120-40c59.964,0,60.402,40,120,40s59.925-40,120-40s60.291,40,120,40s60.235-40,120-40s60.18,40,120,40s59.82,0,59.82,0l0.18,26H-60V72L-40,71.627z"
+            ></path>
+            <path
+              class=""
+              style="opacity: 1;fill: #2a3f54;"
+              d="M-40,83.627C20.307,83.627,20.058,44,80,44s60.003,40,120,40s59.948-40,120-40s60.313,40,120,40s60.258-40,120-40s60.202,40,120,40s60.147-40,120-40s60.513,40,120,40s60.036-40,120-40c59.964,0,60.402,40,120,40s59.925-40,120-40s60.291,40,120,40s60.235-40,120-40s60.18,40,120,40s59.82,0,59.82,0l0.18,14H-60V84L-40,83.627z"
+            ></path>
+            <path
+              class=""
+              style="fill: rgb(34, 49, 63);"
+              d="M-40,95.627C20.307,95.627,20.058,56,80,56s60.003,40,120,40s59.948-40,120-40s60.313,40,120,40s60.258-40,120-40s60.202,40,120,40s60.147-40,120-40s60.513,40,120,40s60.036-40,120-40c59.964,0,60.402,40,120,40s59.925-40,120-40s60.291,40,120,40s60.235-40,120-40s60.18,40,120,40s59.82,0,59.82,0l0.18,138H-60V96L-40,95.627z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+      <section class="dark-blue text-white">
+        <h2
+          class="text-5xl py-10 text-center font-extrabold tracking-tight leading-none select-none"
+        >
+          Quais ferramentas são utilizadas?
+        </h2>
+        <div
+          class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12"
+        >
+          <div class="mr-auto place-self-center lg:col-span-7">
+            <h2
+              class="max-w-2xl mb-4 text-2xl font-extrabold tracking-tight leading-none md:text-3xl xl:text-4xl"
+            >
+              Hospedagem Segura
+            </h2>
+            <p class="max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl">
+              Escolha a melhor hospedagem para segurança máxima. Analisamos
+              opções, considerando recursos importantes. Recomendamos ambiente
+              seguro para seu site. Confie em nós e tenha tranquilidade online.
+            </p>
+          </div>
+          <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+            <img src="Ferramenta1.png" alt="Ferramenta1" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
