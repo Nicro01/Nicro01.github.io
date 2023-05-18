@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebGenie</title>
-    <link href="/dist/output.css" rel="stylesheet" />
+    <link href="./dist/output.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
@@ -18,7 +18,11 @@
     ></script>
   </head>
   <body style="background-color: #F3FCF0">
-    <header class="pb-28 pt-5" style="color: #1F271B" id="backgroundHeader">
+    <header
+      class="pb-28 pt-5"
+      style="color: #1F271B"
+      id="backgroundHeader max-md:select-none"
+    >
       <web-particles
         id="tsparticles"
         options='{"fps_limit":60,"interactivity":{"detectsOn":"canvas","events":{"onClick":{"enable":false,"mode":"push"},"onHover":{"enable":true,"mode":"repulse"},"resize":true},"modes":{"push":{"particles_nb":4},"repulse":{"distance":200,"duration":0.4}}},"particles":{"color":{"value":"#ffffff"},"links":{"color":"#FFD23F","distance":150,"enable":true,"opacity":0.4,"width":1},"move":{"bounce":false,"direction":"none","enable":true,"outMode":"out","random":false,"speed":2,"straight":false},"number":{"density":{"enable":true,"area":800},"value":80},"opacity":{"value":0.5},"shape":{"type":"circle"},"size":{"random":true,"value":5}},"detectRetina":true}'
@@ -49,18 +53,18 @@
           />
           <div class="place-items-center pt-44">
             <h2
-              class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl"
+              class="max-w-2xl mb-4 max-md:text-lx font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl"
             >
               Tenha uma Landing Page profissional
             </h2>
-            <p class="text-xl mt-5">
+            <p class="text-xl mt-5 max-md:text-sm">
               Transforme visitantes em clientes com uma landing page
               profissional. Aumente suas chances de conversão e destaque-se da
               concorrência. Crie agora a sua landing page com a ajuda da nossa
               equipe especializada em design e marketing digital
             </p>
             <button
-              class="rounded-lg p-4 mt-14 font-semibold text-xl w-auto bg-yellow-400 hover:bg-purple-600 ease-in duration-150"
+              class="rounded-lg p-4 mt-14 font-semibold text-xl w-auto bg-yellow-400 hover:bg-purple-600 ease-in duration-150 max-md:text-sm"
               id="buttonOrcamento"
             >
               FAZER ORÇAMENTO
@@ -70,7 +74,7 @@
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="w-6 h-6 inline mb-1 ml-2"
+                class="w-6 h-6 inline mb-1 ml-2 max-md:w-4 max-md:h-4"
               >
                 <path
                   stroke-linecap="round"
