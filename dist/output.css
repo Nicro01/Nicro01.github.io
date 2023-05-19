@@ -1611,6 +1611,15 @@ input[type="range"]::-ms-fill-lower {
     gap: 5rem;
   }
 
+  .max-md\:bg-\[\] {
+    background-color: ;
+  }
+
+  .max-md\:bg-yellow-100 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(253 246 178 / var(--tw-bg-opacity)) !important;
+  }
+
   .max-md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -1710,7 +1719,7 @@ input[type="range"]::-ms-fill-lower {
   }
 
   .lg\:bg-transparent {
-    background-color: transparent !important;
+    background-color: transparent;
   }
 
   .lg\:py-16 {
@@ -1727,7 +1736,7 @@ input[type="range"]::-ms-fill-lower {
     --tw-shadow: 0 0 #0000;
     --tw-shadow-colored: 0 0 #0000;
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-      var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+      var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 }
 
