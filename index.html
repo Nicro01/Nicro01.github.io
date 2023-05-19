@@ -18,14 +18,10 @@
     ></script>
   </head>
   <body style="background-color: #F3FCF0">
-    <header
-      class="pb-28 pt-5"
-      style="color: #1F271B"
-      id="backgroundHeader max-md:select-none"
-    >
+    <header class="h-[85vh]">
       <web-particles
         id="tsparticles"
-        options='{"fps_limit":60,"interactivity":{"detectsOn":"canvas","events":{"onClick":{"enable":false,"mode":"push"},"onHover":{"enable":true,"mode":"repulse"},"resize":true},"modes":{"push":{"particles_nb":4},"repulse":{"distance":200,"duration":0.4}}},"particles":{"color":{"value":"#ffffff"},"links":{"color":"#FFD23F","distance":150,"enable":true,"opacity":0.4,"width":1},"move":{"bounce":false,"direction":"none","enable":true,"outMode":"out","random":false,"speed":2,"straight":false},"number":{"density":{"enable":true,"area":800},"value":80},"opacity":{"value":0.5},"shape":{"type":"circle"},"size":{"random":true,"value":5}},"detectRetina":true}'
+        options='{"fps_limit":60,"interactivity":{"detectsOn":"canvas","events":{"onClick":{"enable":false,"mode":"push"},"onHover":{"enable":true,"mode":"repulse"},"resize":true},"modes":{"push":{"particles_nb":4},"repulse":{"distance":200,"duration":0.4}}},"particles":{"color":{"value":"#ffffff"},"links":{"color":"#FFD23F","distance":150,"enable":true,"opacity":0.3,"width":1},"move":{"bounce":false,"direction":"none","enable":true,"outMode":"out","random":false,"speed":2,"straight":false},"number":{"density":{"enable":true,"area":800},"value":80},"opacity":{"value":0.3},"shape":{"type":"circle"},"size":{"random":true,"value":5}},"detectRetina":true}'
       ></web-particles>
       <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.28.0/dist/tsparticles.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2.5.0/custom-elements-es5-adapter.js"></script>
@@ -39,21 +35,24 @@
         defer=""
         src="https://buttons.github.io/buttons.js"
       ></script>
-      <div class="container mx-auto my-12 select-none">
-        <h1 class="text-5xl font-bold">WebGenie</h1>
-        <p class="small py-2 ml-1">Desenvolvimento de websites e chatbots</p>
+      <div class="container mx-auto pt-12 max-md:px-5">
+        <h1 class="text-6xl font-extrabold max-md:text-4xl">
+          WebGenie
+        </h1>
+        <p class="text-xl py-2 max-md:text-sm">
+          Desenvolvimento de websites e chatbots
+        </p>
       </div>
-      <div class="container mx-auto">
-        <div class="columns-2 gap-60 md:gap-20 select-none">
+      <div class="container mx-auto max-md:max-w-fit max-md:px-5 max-md:pt-14">
+        <div class="columns-2 gap-80 max-md:gap-20 max-md:columns-auto">
           <img
             src="./img/computer.webp"
             alt="Computer image."
-            style="transform: scale(1) rotate(15deg);"
-            class="my-20 select-none"
+            class="my-20 scale-[1.2] rotate-[15deg] max-md:hidden"
           />
-          <div class="place-items-center pt-44">
+          <div class="place-items-center pt-32 max-md:pt-0">
             <h2
-              class="max-w-2xl mb-4 max-md:text-lx font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl"
+              class="max-w-4xl mb-4 text-5xl max-md:text-xl font-extrabold tracking-tight leading-none"
             >
               Tenha uma Landing Page profissional
             </h2>
@@ -91,7 +90,9 @@
       <div class="flex w-full">
         <img src="Vectortriangulo.png" alt="" class="w-full relative" />
       </div>
-      <div class="mx-auto pt-20 px-64 py-8 bg-white w-screen select-none">
+      <div
+        class="mx-auto pt-20 px-64 max-md:px-0 py-8 bg-white w-screen select-none"
+      >
         <h2
           class="text-5xl mb-16 text-center py-14 font-extrabold tracking-tight leading-none"
         >
