@@ -1511,6 +1511,12 @@ input[type="range"]::-ms-fill-lower {
     max-width: fit-content;
   }
 
+  .max-md\:select-none {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+  }
+
   .max-md\:columns-auto {
     -moz-columns: auto;
          columns: auto;
