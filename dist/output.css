@@ -2028,7 +2028,7 @@ input[type="range"]::-ms-fill-lower {
 
   .lg\:shadow-\[transparent\!important\] {
     --tw-shadow-color: transparent !important;
-    --tw-shadow: var(--tw-shadow-colored);
+    --tw-shadow: var(--tw-shadow-colored) !important;
   }
 }
 
