@@ -1691,7 +1691,7 @@ input[type="range"]::-ms-fill-lower {
   }
 
   .lg\:col-span-7 {
-    grid-column: span 7 / span 7;
+    grid-column: span 7 / span 7 !important;
   }
 
   .lg\:mb-8 {
