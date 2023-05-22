@@ -1589,6 +1589,14 @@ input[type="range"]::-ms-fill-lower {
     background-color: rgb(253 246 178 / var(--tw-bg-opacity));
   }
 
+  .max-md\:bg-\[\#FDF6E3\!important\] {
+    background-color: #FDF6E3 !important;
+  }
+
+  .max-md\:bg-opacity-\[0\.1\!important\] {
+    --tw-bg-opacity: 0.1 !important;
+  }
+
   .max-md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -1772,6 +1780,10 @@ input[type="range"]::-ms-fill-lower {
 
   .lg\:bg-transparent {
     background-color: transparent;
+  }
+
+  .lg\:bg-\[transparent\!important\] {
+    background-color: transparent !important;
   }
 
   .lg\:text-xl {
