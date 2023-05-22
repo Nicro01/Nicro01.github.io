@@ -1612,7 +1612,7 @@ input[type="range"]::-ms-fill-lower {
   }
 
   .max-md\:bg-\[\] {
-    background-color: ;
+    background-color: transparent;
   }
 
   .max-md\:bg-yellow-100 {
