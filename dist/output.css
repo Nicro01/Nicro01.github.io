@@ -1619,6 +1619,11 @@ input[type="range"]::-ms-fill-lower {
   background-color: rgb(194 120 3 / var(--tw-bg-opacity));
 }
 
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .hover\:underline:hover {
   -webkit-text-decoration-line: underline;
   text-decoration-line: underline;
@@ -2023,12 +2028,12 @@ input[type="range"]::-ms-fill-lower {
 
   .lg\:shadow-\[none\!important\] {
     --tw-shadow-color: none !important;
-    --tw-shadow: var(--tw-shadow-colored) !important;
+    --tw-shadow: var(--tw-shadow-colored);
   }
 
   .lg\:shadow-\[transparent\!important\] {
     --tw-shadow-color: transparent !important;
-    --tw-shadow: var(--tw-shadow-colored) !important;
+    --tw-shadow: var(--tw-shadow-colored);
   }
 }
 
