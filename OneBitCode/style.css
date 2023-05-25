@@ -84,10 +84,11 @@ button:active {
 
 @media screen and (max-width: 800px) {
   .div-content {
-    height: 70vh;
+    height: auto;
     width: 90%;
   }
   .tela {
+    margin-bottom: 50px;
     width: 90%;
   }
 
@@ -96,6 +97,7 @@ button:active {
   }
 
   .teclas {
+    top: 0;
     width: 90%;
   }
 
