@@ -94,6 +94,7 @@ button:active {
 
   .tela input {
     font-size: 25px;
+    max-width: 80%;
   }
 
   .teclas {
