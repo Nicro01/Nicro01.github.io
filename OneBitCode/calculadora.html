@@ -15,16 +15,25 @@
   </head>
   <body>
     <div class="div-main">
+      <button class="troca-teclas" id="troca-teclas" onclick="changeKeys()">
+        <p>OUTROS</p>
+      </button>
       <div class="div-content">
         <div class="tela">
           <input type="text" id="tela" readonly />
         </div>
         <div class="teclas">
           <div class="row">
+            <button class="button" id="clear">C</button>
+            <button class="button" >(</button>
+            <button class="button" >)</button>
+            <button class="button" id="mm">+/-</button>
+          </div>
+          <div class="row">
             <button class="button">7</button>
-            <button class="button">8</button>
+            <button class="button">6</button>
             <button class="button">9</button>
-            <button class="button">/</button>
+            <button class="button" style="font-weight:500;">÷</button>
           </div>
           <div class="row">
             <button class="button">4</button>
@@ -39,15 +48,43 @@
             <button class="button">-</button>
           </div>
           <div class="row">
+            <button class="button" style="font-weight: 700;">.</button>
             <button class="button">0</button>
-            <button class="button">.</button>
             <button class="button">+</button>
             <button id="equal" class="button">=</button>
           </div>
-          <div class="row">
-            <button class="button" id="clear">LIMPAR</button>
-          </div>
         </div>
+        <div class="teclas-2">
+          <div class="row">
+            <button class="button" id="clear-2">C</button>
+            <button class="button" >(</button>
+            <button class="button" >)</button>
+            <button class="button" id="mm">+/-</button>
+          </div>
+          <div class="row">
+            <button class="button">7</button>
+            <button class="button">6</button>
+            <button class="button">9</button>
+            <button class="button">π</button>
+          </div>
+          <div class="row">
+            <button class="button">4</button>
+            <button class="button">5</button>
+            <button class="button">6</button>
+            <button class="button">n!</button>
+          </div>
+          <div class="row">
+            <button class="button">1</button>
+            <button class="button">2</button>
+            <button class="button">3</button>
+            <button class="button" id="quadrado">x²</button>
+          </div>
+          <div class="row">
+            <button class="button" style="font-weight: 700;">.</button>
+            <button class="button">0</button>
+            <button class="button">√</button>
+            <button id="equal-2" class="button">=</button>
+          </div>
       </div>
     </div>
     <script src="main.js"></script>
