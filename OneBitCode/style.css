@@ -64,7 +64,7 @@
   display: flex;
 }
 
-button {
+.div-content button {
   flex: 1;
   border-radius: 50px;
   background: linear-gradient(145deg, #f0f0f0, #cacaca);
@@ -77,9 +77,45 @@ button {
   user-select: none;
 }
 
-button:active {
+.div-content button:active {
   background: linear-gradient(145deg, #d8d8d8, #ffffff);
   box-shadow: 20px 20px 60px #cccccc, -5px -5px 15px #ffffff;
+}
+
+#troca-teclas p {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+#troca-teclas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 6vh;
+  height: 16vh;
+  margin-right: 25px;
+  border: none;
+  background: linear-gradient(145deg, #96e97d, #56c86f);
+  box-shadow: 20px 20px 60px #bebebe, -5px -5px 15px #ffffff;
+}
+
+#troca-teclas:active {
+  background: linear-gradient(145deg, #8dff5c, #1cac40);
+  box-shadow: 20px 20px 60px #cccccc, -5px -5px 15px #ffffff;
+}
+
+.teclas-2 {
+  display: none;
+  position: relative;
+  top: 50px;
+  width: 480px;
+  grid-template-columns: repeat(1, 2fr);
+  grid-gap: 5px;
+  margin: 0 auto;
+  height: 430px;
 }
 
 @media screen and (max-width: 800px) {
@@ -102,8 +138,29 @@ button:active {
     width: 90%;
   }
 
+  .teclas-2 {
+    top: 0;
+    width: 90%;
+  }
+
   .button {
     border-radius: 25px;
     height: 60px;
+  }
+
+  .div-main {
+    flex-direction: column-reverse;
+  }
+
+  .troca-teclas p {
+    writing-mode: horizontal-tb !important;
+    text-orientation: sideways !important;
+  }
+
+  .troca-teclas {
+    width: 25vh !important;
+    height: 5vh !important;
+    margin-right: 0 !important;
+    margin-top: 5vh;
   }
 }
