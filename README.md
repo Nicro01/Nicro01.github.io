@@ -21,7 +21,7 @@
 
 ## License
 
-Distributed under the GPL-3.0 License. See `LICENSE` for more information.
+Distributed under the GNU General Public License v3.0 . See `LICENSE` for more information.
 
 ## Project Status
 
