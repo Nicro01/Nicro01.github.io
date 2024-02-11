@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Etiqueta</title>
+    <style>
+      /* Estilos CSS para a etiqueta */
+      .etiqueta {
+        border: 1px solid black;
+        padding: 10px;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="etiqueta">
+      <h2>Etiqueta</h2>
+      <label for="destinatario">Destinatário:</label>
+      <input type="text" id="destinatario" /><br /><br />
+      <label for="endereco">Endereço:</label>
+      <input type="text" id="endereco" /><br /><br />
+      <label for="codigoRMA">Código RMA:</label>
+      <input type="text" id="codigoRMA" /><br /><br />
+      <button onclick="imprimirEtiqueta()">Imprimir</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+    <script>
+      function imprimirEtiqueta() {
+        var destinatario = document.getElementById("destinatario").value;
+        var endereco = document.getElementById("endereco").value;
+        var codigoRMA = document.getElementById("codigoRMA").value;
+
+        // Cria um novo documento PDF
+        var doc = new jsPDF();
+
+        // Adiciona o conteúdo ao documento
+        doc.setFontSize(10);
+        doc.text("Destinatário: ", 10, 10);
+        doc.text(
+          "FingerTech Importação e Comércio de Produtos Tecnológicos LTDA.",
+          20,
+          20
+        );
+        doc.text(
+          "Rua Ernani Lacerda de Athayde, 350 - 7° andar, S1 703 - CEP: 86055-630",
+          20,
+          24
+        );
+        doc.text("Londrina/PR", 20, 28);
+
+        doc.text("CÓDIGO RMA: ", 10, 38);
+        // Salva o documento como um arquivo PDF
+        doc.save("etiqueta.pdf");
+      }
+    </script>
+  </body>
+</html>
